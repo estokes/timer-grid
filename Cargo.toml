@@ -1,0 +1,19 @@
+[package]
+name = "timer-grid"
+version = "0.1.0"
+edition = "2024"
+description = "Periodic timers on a wall-clock grid, so timers due together fire in one wakeup, within a process and across machines"
+license = "MIT"
+readme = "README.md"
+keywords = ["timer", "interval", "wakeup", "power", "tokio"]
+categories = ["date-and-time", "asynchronous"]
+
+[features]
+default = ["tokio"]
+tokio = ["dep:tokio"]
+
+[dependencies]
+tokio = { version = "1", features = ["time"], optional = true }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt", "time"] }
