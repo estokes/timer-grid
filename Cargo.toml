@@ -1,10 +1,11 @@
 [package]
 name = "timer-grid"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 authors = ["Eric Stokes <eestokes@pm.me>"]
 description = "Periodic timers on a wall-clock grid, so timers due together fire in one wakeup, within a process and across machines"
 license = "MIT"
+repository = "https://github.com/estokes/timer-grid"
 readme = "README.md"
 keywords = ["timer", "interval", "wakeup", "power", "tokio"]
 categories = ["date-and-time", "asynchronous"]
